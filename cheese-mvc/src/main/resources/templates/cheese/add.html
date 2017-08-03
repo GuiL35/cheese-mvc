@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/> <!--remember to put the close tag-->
+
+    <!--/*@thymesVar id="title" type=""*/-->
+    <title th:text="${title}"></title>
+</head>
+<body>
+<!--time leaf snytax-->
+<!--/*@thymesVar id="title" type=""*/-->
+<h1 th:text="${title}"></h1>
+<form method = "post">  <!-- action = ""hit submit button &
+leads to this form, if not specefy, it will go to the original, which is" /cheese/add" here-->
+    <input type="text" name="cheeseName" />
+    <input type="submit" value ="Add cheese" />
+</form>
+</body>
+</html>
